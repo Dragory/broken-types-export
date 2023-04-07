@@ -1,0 +1,21 @@
+{
+  "name": "broken-types-export",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./other": {
+      "types": "./dist/subfolder/other.d.ts",
+      "import": "./dist/subfolder/other.js"
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  }
+}
